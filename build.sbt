@@ -1,7 +1,7 @@
 import sbt.Keys._
 
 val Scala_2_12 = "2.12.21"
-val Scala_2_13 = "2.13.10"
+val Scala_2_13 = "2.13.18"
 
 organization       := "com.yannmoisan"
 scalaVersion       := Scala_2_12
