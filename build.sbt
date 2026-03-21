@@ -1,7 +1,11 @@
 import sbt.Keys._
 
+val Scala_2_12 = "2.12.21"
+val Scala_2_13 = "2.13.10"
+
 organization       := "com.yannmoisan"
-crossScalaVersions := Seq("2.12.21", "2.13.10")
+scalaVersion       := Scala_2_12
+crossScalaVersions := Seq(Scala_2_12, Scala_2_13)
 
 scalafmtOnCompile := true
 
@@ -20,7 +24,7 @@ scmInfo := Some(
   )
 )
 
-publishArtifact in Test := false
+Test / publishArtifact := false
 pomIncludeRepository := { _ =>
   false
 }
